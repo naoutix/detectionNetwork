@@ -1,1 +1,10 @@
 lynx
+chimpanze
+gorille
+coyote
+hamster
+leopard
+loup
+chat
+chien
+orangoutan
