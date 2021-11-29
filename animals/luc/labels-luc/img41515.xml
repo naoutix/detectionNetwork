@@ -1,0 +1,26 @@
+<annotation>
+	<folder>luc</folder>
+	<filename>img41515.jpg</filename>
+	<path>/home/wargast/Documents/N7/3ASN/S9/IA/detectionNetwork/animals/luc/img41515.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>64</width>
+		<height>64</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>chat</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>6</xmin>
+			<ymin>10</ymin>
+			<xmax>57</xmax>
+			<ymax>54</ymax>
+		</bndbox>
+	</object>
+</annotation>

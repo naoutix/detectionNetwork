@@ -1,0 +1,26 @@
+<annotation>
+	<folder>luc</folder>
+	<filename>img41534.jpg</filename>
+	<path>/home/wargast/Documents/N7/3ASN/S9/IA/detectionNetwork/animals/luc/img41534.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>64</width>
+		<height>64</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>hamster</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>12</xmin>
+			<ymin>2</ymin>
+			<xmax>58</xmax>
+			<ymax>43</ymax>
+		</bndbox>
+	</object>
+</annotation>
