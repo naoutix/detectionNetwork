@@ -4,10 +4,14 @@ import pickle
 import xml.etree.ElementTree as ET
 from os import listdir, getcwd
 from os.path import join
+from pathlib import Path 
 
 classes = ['hamster', 'loup', 'leopard', 'chat', 'lynx', 'chimpanze', 'cerf',
 'orang outan', 'coyote', 'chien', 'renard', 'souris', 'oiseau', 'tigre', 'lapin',
-'lion']
+'lion'] + ['gorille', 'babouin']
+
+INPUT_DIR = Path('animals/luc/labels-luc')
+OUTPUT_DIR = Path('animals/luc/yolo_labels')
 
 def convert(size, box):
     dw = 1./(size[0])
@@ -22,12 +26,10 @@ def convert(size, box):
     h = h*dh
     return (x,y,w,h)
 
-def convert_annotation(dir_path, output_path, image_path):
-    basename = os.path.basename(image_path)
-    basename_no_ext = os.path.splitext(basename)[0]
+def convert_annotation(label_file: Path, output_path: Path):
 
-    in_file = open(dir_path + '/' + basename_no_ext + '.xml')
-    out_file = open(output_path + basename_no_ext + '.txt', 'w')
+    in_file = open(label_file)
+    out_file = open(output_path.joinpath(label_file.stem + '.txt'), 'w')
     tree = ET.parse(in_file)
     root = tree.getroot()
     size = root.find('size')
@@ -38,7 +40,14 @@ def convert_annotation(dir_path, output_path, image_path):
 
         difficult = obj.find('difficult').text
         cls = obj.find('name').text
+        if cls.startswith("orang"):
+            cls = "orang outan"
+            
+        if cls.startswith("cochon"):
+            cls = 'hamster'
+            
         if cls not in classes or int(difficult)==1:
+            print(f"{cls} not found ({label_file})")
             continue
         cls_id = classes.index(cls)
         xmlbox = obj.find('bndbox')
@@ -46,7 +55,7 @@ def convert_annotation(dir_path, output_path, image_path):
         bb = convert((w,h), b)
         out_file.write(str(cls_id) + " " + " ".join([str(a) for a in bb]) + '\n')
 
-FichList = [ f for f in os.listdir('/Users/alicepigneux/Desktop/Cours_3A/IA/labelled_PASCAL_VOC/') if not os.path.basename(f).startswith('.')]
-for Fich in FichList:
-    # print('/Users/alicepigneux/Desktop/Cours_3A/IA/labelled_PASCAL_VOC/'+Fich)
-    convert_annotation('/Users/alicepigneux/Desktop/Cours_3A/IA/labelled_PASCAL_VOC/', '/Users/alicepigneux/Desktop/Cours_3A/IA/labelled_YOLO/', '/Users/alicepigneux/Desktop/Cours_3A/IA/labelled_PASCAL_VOC/'+Fich)
+for x in INPUT_DIR.iterdir() :
+    if not x.is_dir():
+        # print(INPUT_DIR+Fich)
+        convert_annotation(x, OUTPUT_DIR)
