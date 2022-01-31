@@ -9,8 +9,8 @@ from pathlib import Path
 classes = ['hamster', 'loup', 'leopard', 'chat', 'lynx', 'chimpanze',
 'orang outan', 'coyote']
 
-INPUT_DIR = Path('/Users/alicepigneux/Desktop/Cours_3A/IA/detectionNetwork/donnees_annotees/labelled_PASCAL_VOC')
-OUTPUT_DIR = Path('/Users/alicepigneux/Desktop/Cours_3A/IA/detectionNetwork/donnees_annotees/labelled_YOLO_2')
+INPUT_DIR = Path('donnees_annotees/labelled_PASCAL_VOC')
+OUTPUT_DIR = Path('donnees_annotees/labelled_YOLO_2')
 
 def convert(size, box):
     dw = 1./(size[0])
@@ -26,7 +26,7 @@ def convert(size, box):
     return (x,y,w,h)
 
 def convert_annotation(label_file: Path, output_path: Path):
-
+    print(label_file)
     in_file = open(label_file)
     out_file = open(output_path.joinpath(label_file.stem + '.txt'), 'w')
     tree = ET.parse(in_file)
