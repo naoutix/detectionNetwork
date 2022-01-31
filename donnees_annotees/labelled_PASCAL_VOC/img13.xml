@@ -1,0 +1,26 @@
+<annotation>
+	<folder>leo</folder>
+	<filename>img13.jpg</filename>
+	<path>C:\Users\leoar\Documents\n7\3A\IA\detectionNetwork\animals\leo\img13.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>64</width>
+		<height>64</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>loup</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>15</xmin>
+			<ymin>9</ymin>
+			<xmax>62</xmax>
+			<ymax>64</ymax>
+		</bndbox>
+	</object>
+</annotation>

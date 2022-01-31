@@ -1,0 +1,26 @@
+<annotation>
+	<folder>leo</folder>
+	<filename>img170.jpg</filename>
+	<path>C:\Users\leoar\Documents\n7\3A\IA\detectionNetwork\animals\leo\img170.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>64</width>
+		<height>64</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>orang outan</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>10</ymin>
+			<xmax>50</xmax>
+			<ymax>64</ymax>
+		</bndbox>
+	</object>
+</annotation>

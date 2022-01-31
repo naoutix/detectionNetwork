@@ -6,12 +6,11 @@ from os import listdir, getcwd
 from os.path import join
 from pathlib import Path 
 
-classes = ['hamster', 'loup', 'leopard', 'chat', 'lynx', 'chimpanze', 'cerf',
-'orang outan', 'coyote', 'chien', 'renard', 'souris', 'oiseau', 'tigre', 'lapin',
-'lion'] + ['gorille', 'babouin']
+classes = ['hamster', 'loup', 'leopard', 'chat', 'lynx', 'chimpanze',
+'orang outan', 'coyote']
 
-INPUT_DIR = Path('animals/luc/labels-luc')
-OUTPUT_DIR = Path('animals/luc/yolo_labels')
+INPUT_DIR = Path('/Users/alicepigneux/Desktop/Cours_3A/IA/detectionNetwork/donnees_annotees/labelled_PASCAL_VOC')
+OUTPUT_DIR = Path('/Users/alicepigneux/Desktop/Cours_3A/IA/detectionNetwork/donnees_annotees/labelled_YOLO_2')
 
 def convert(size, box):
     dw = 1./(size[0])
@@ -45,6 +44,7 @@ def convert_annotation(label_file: Path, output_path: Path):
             
         if cls.startswith("cochon"):
             cls = 'hamster'
+        
             
         if cls not in classes or int(difficult)==1:
             print(f"{cls} not found ({label_file})")
