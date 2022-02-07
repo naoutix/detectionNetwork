@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Lynx",
+        "xmin": 0,
+        "ymin": 7,
+        "xmax": 30,
+        "ymax": 63
+    },
+    {
+        "label": "Lynx",
+        "xmin": 26,
+        "ymin": 7,
+        "xmax": 63,
+        "ymax": 63
+    }
+]

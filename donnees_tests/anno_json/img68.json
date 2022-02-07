@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Chimpanzé",
+        "xmin": 8,
+        "ymin": 11,
+        "xmax": 35,
+        "ymax": 60
+    },
+    {
+        "label": "Chimpanzé",
+        "xmin": 31,
+        "ymin": 11,
+        "xmax": 63,
+        "ymax": 63
+    }
+]

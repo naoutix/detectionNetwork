@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Guépard",
+        "xmin": 0,
+        "ymin": 13,
+        "xmax": 40,
+        "ymax": 63
+    },
+    {
+        "label": "Guépard",
+        "xmin": 40,
+        "ymin": 14,
+        "xmax": 61,
+        "ymax": 60
+    }
+]

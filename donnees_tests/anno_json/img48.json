@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Jaguar",
+        "xmin": 15,
+        "ymin": 9,
+        "xmax": 63,
+        "ymax": 59
+    },
+    {
+        "label": "Jaguar",
+        "xmin": 0,
+        "ymin": 7,
+        "xmax": 30,
+        "ymax": 55
+    }
+]

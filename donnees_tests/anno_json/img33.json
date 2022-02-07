@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Coyote",
+        "xmin": 17,
+        "ymin": 9,
+        "xmax": 63,
+        "ymax": 63
+    },
+    {
+        "label": "Coyote",
+        "xmin": 5,
+        "ymin": 0,
+        "xmax": 63,
+        "ymax": 40
+    }
+]

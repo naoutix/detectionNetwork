@@ -1,0 +1,23 @@
+[
+    {
+        "label": "Orang-Outan",
+        "xmin": 10,
+        "ymin": 16,
+        "xmax": 63,
+        "ymax": 59
+    },
+    {
+        "label": "Orang-Outan",
+        "xmin": 23,
+        "ymin": 31,
+        "xmax": 33,
+        "ymax": 54
+    },
+    {
+        "label": "Orang-Outan",
+        "xmin": 15,
+        "ymin": 35,
+        "xmax": 23,
+        "ymax": 56
+    }
+]

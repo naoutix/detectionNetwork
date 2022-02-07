@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Cochon d'Inde",
+        "xmin": 0,
+        "ymin": 4,
+        "xmax": 40,
+        "ymax": 63
+    },
+    {
+        "label": "Cochon d'Inde",
+        "xmin": 32,
+        "ymin": 7,
+        "xmax": 60,
+        "ymax": 55
+    }
+]

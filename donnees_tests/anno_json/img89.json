@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Hamster",
+        "xmin": 44,
+        "ymin": 14,
+        "xmax": 63,
+        "ymax": 38
+    },
+    {
+        "label": "Chat",
+        "xmin": 0,
+        "ymin": 9,
+        "xmax": 52,
+        "ymax": 63
+    }
+]

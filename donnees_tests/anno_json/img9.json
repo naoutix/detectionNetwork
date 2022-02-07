@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Chat",
+        "xmin": 6,
+        "ymin": 17,
+        "xmax": 42,
+        "ymax": 55
+    },
+    {
+        "label": "Chat",
+        "xmin": 26,
+        "ymin": 17,
+        "xmax": 52,
+        "ymax": 56
+    }
+]

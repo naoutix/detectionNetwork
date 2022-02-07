@@ -1,0 +1,16 @@
+[
+    {
+        "label": "Loup",
+        "xmin": 12,
+        "ymin": 13,
+        "xmax": 33,
+        "ymax": 49
+    },
+    {
+        "label": "Loup",
+        "xmin": 30,
+        "ymin": 9,
+        "xmax": 58,
+        "ymax": 45
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "label": "Cochon d'Inde",
+        "xmin": 11,
+        "ymin": 12,
+        "xmax": 41,
+        "ymax": 24
+    },
+    {
+        "label": "Cochon d'Inde",
+        "xmin": 14,
+        "ymin": 23,
+        "xmax": 61,
+        "ymax": 41
+    },
+    {
+        "label": "Cochon d'Inde",
+        "xmin": 23,
+        "ymin": 32,
+        "xmax": 60,
+        "ymax": 63
+    },
+    {
+        "label": "Cochon d'Inde",
+        "xmin": 23,
+        "ymin": 32,
+        "xmax": 60,
+        "ymax": 63
+    },
+    {
+        "label": "Cochon d'Inde",
+        "xmin": 23,
+        "ymin": 32,
+        "xmax": 60,
+        "ymax": 63
+    }
+]
