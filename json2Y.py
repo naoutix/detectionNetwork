@@ -22,10 +22,10 @@ def convert(file, path_anno_yolo):
         x2 = data_i["xmax"]
         y1 = data_i["ymin"]
         y2 = data_i["ymax"]
-        liste_txt[i][1] = (x1 + x2) / 2
-        liste_txt[i][2] = (y1 + y2) / 2
-        liste_txt[i][3] = (x2 - x1)
-        liste_txt[i][4] = (y2 - y1)
+        liste_txt[i][1] = ((x1 + x2) / 2)/64
+        liste_txt[i][2] = ((y1 + y2) / 2)/64
+        liste_txt[i][3] = ((x2 - x1))/64
+        liste_txt[i][4] = ((y2 - y1))/64
         
         if label=="Chat":
             label = 0
